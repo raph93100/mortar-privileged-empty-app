@@ -29,7 +29,7 @@ Moving over to `index.html`, this is the starting point for the app when it's la
 
 The appearance is defined in `css/app.css`. There are just some very basic rules.
 
-We define the app's behaviour in `js/app.js`. The most important aspect of this app is how we run XMLHttpRequests across domains without getting same-origin or CORS errors, thanks to the usage of the `mozSystem: true` attribute when instancing the XMLHTTPRequests. Be sure to have a look at the code to see where this happens.
+We define the app's behaviour in `js/app.js`. Right now we're just basically displaying a "Hello world" message.
 
 Finally we are also including `js/libs/l10n.js`, which contains [L10n](https://developer.mozilla.org/en-US/docs/Web/API/L10n_API), a library for translating the strings in the app. Using this library, users can run the app in their own language, as long as you provide the translations for those languages. We're currently including a translation to Spanish as an example, but feel free to contribute with more translations in `data/locales.ini`, looking at `data/es.properties` and `data/en-US.properties` to see the syntax in action. The way it works, it will automatically translate the HTML elements that contain a `data-l10n-id` attribute with the translation identifier.
 
